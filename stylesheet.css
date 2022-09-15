@@ -8,11 +8,6 @@
     font-weight: 200;
 }
 
-body {
-    margin: 0;
-    ;
-}
-
 nav {
     background-color: black;
 }
@@ -73,9 +68,14 @@ nav {
 }
 
 /* 카카오맵 css */
+body {
+    height: 100vh;
+    margin: 0;
+}
+
 #map {
     width: 100%;
-    height: 100px;
+    height: 500px;
 }
 
 /* 고정시키기 */
@@ -85,9 +85,8 @@ nav {
 
 /* 나머지 범위를 main이 가져가게 */
 main {
-    /* padding-top을 주면 박스 사이즈에 포함이되게 한다. */
-    flex-grow: 1;
-    height: calc(100% - 50px);
+    padding-top: 1.5rem;
+    height: calc(100% - 59px);
     display: flex;
     flex-direction: column;
 }
